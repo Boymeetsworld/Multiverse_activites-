@@ -1,0 +1,10 @@
+const { describe } = require('yargs')
+const User = require('./User.js')
+
+
+const sum = require('./sum')
+const { test, expect } = require('@jest/globals')
+
+test('properly adds two numbers', () => {
+    expect(sum(1, 2)).toBe(3)
+}
